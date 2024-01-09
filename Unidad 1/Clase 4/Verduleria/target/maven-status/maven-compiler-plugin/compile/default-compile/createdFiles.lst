@@ -1,0 +1,5 @@
+cl\duoc\verduleria\models\Producto.class
+cl\duoc\verduleria\models\Producto$UnidadMedida.class
+cl\duoc\verduleria\models\Solicitud.class
+cl\duoc\verduleria\Verduleria.class
+cl\duoc\verduleria\models\Cliente.class
