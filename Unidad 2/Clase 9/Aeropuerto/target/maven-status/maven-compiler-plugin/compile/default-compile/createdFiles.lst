@@ -1,0 +1,5 @@
+cl\duoc\aeropuerto\models\Aeronave.class
+cl\duoc\aeropuerto\models\Avion.class
+cl\duoc\aeropuerto\models\Carguero.class
+cl\duoc\aeropuerto\Aeropuerto.class
+cl\duoc\aeropuerto\models\Avioneta.class
