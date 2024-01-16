@@ -7,7 +7,7 @@
 # Revisar nuestra versión de JDK
 Aveces puede pasar que tenemos instalada una versión de JDK diferente a la del proyecto que queremos ejecutar, en ese caso cabe mencionar que las JDK son retrocompatibles, osea, desde su misma versión para atrás tienen compatibilidad, pero no desde la versión que tenemos en adelante, esto quiere decir que si tenemos un proyecto con una versión más nueva de JDK que la que tenemos instalado en nuestro equipo, no podremos ejecutarlo a menos que actualicemos la JDK.
 - Para revisar nuestra versión instalada de JDK, deberemos ir a nuestra consola y ejecutar el siguiente comando ```java --version``` :
-![texto_alternativo](./Material/Assets/javaVersion.png)
+![texto_alternativo](./materialAyudantias/Assets/javaVersion.png)
 
 # Convenciones de nombres
 ## 1. Clases:
