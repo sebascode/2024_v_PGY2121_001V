@@ -6,8 +6,13 @@
 
 # Revisar nuestra versión de JDK
 Aveces puede pasar que tenemos instalada una versión de JDK diferente a la del proyecto que queremos ejecutar, en ese caso cabe mencionar que las JDK son retrocompatibles, osea, desde su misma versión para atrás tienen compatibilidad, pero no desde la versión que tenemos en adelante, esto quiere decir que si tenemos un proyecto con una versión más nueva de JDK que la que tenemos instalado en nuestro equipo, no podremos ejecutarlo a menos que actualicemos la JDK.
-- Para revisar nuestra versión instalada de JDK, deberemos ir a nuestra consola y ejecutar el siguiente comando ```java --version``` :
-![texto_alternativo](./materialAyudantias/Assets/javaVersion.png)
+- Para obtener la versión instalada de JDK en nuestro sistema, debemos ir a nuestra consola y ejecutar el comando ```java --version``` :
+![texto_alternativo](./materialAyudantias/Assets/javaVersion.svg)
+
+# Instalar JDK
+![Alt text](materialAyudantias/Assets/jdkSearch.png)
+![Alt text](materialAyudantias/Assets/jdkLink.png)
+- Instalar el archivo descargado.
 
 # Convenciones de nombres
 ## 1. Clases:
@@ -184,4 +189,10 @@ public class Hijo extends Padre {
 }
 
 ```
-Readme by [keaguirre](https://github.com/keaguirre)
+
+## Extras
+- Netbeans tema oscuro:
+https://draculatheme.com/netbeans
+
+
+## Readme by [keaguirre](https://github.com/keaguirre)
