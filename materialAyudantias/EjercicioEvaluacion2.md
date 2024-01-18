@@ -9,7 +9,7 @@ public abstract void listarTodaPersona();
  método que es sobrescrito por las clases hijas, que arrojará toda la información correspondiente.
 
 ### Requerimientos
-- Todas las clases incluyen ambos constructores, métodos mutadores (set), accesadires (get).
+- Todas las clases incluyen ambos constructores, métodos mutadores (set), accesadores (get).
 - Debe implementar las definiciones de la interface.
 - La edad de las personas debe ser mayor o igual a 0.
 - Categoría solo puede ser: 'V' (vip) o 'N' (normal).

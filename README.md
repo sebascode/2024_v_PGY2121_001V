@@ -84,11 +84,14 @@ tipoRetorno nombreDelMetodo(tipoDatoParametro nombreParametro) {
                     │   ├──📄Clase2.java
                     │   ├──📄Clase3.java
                     │   └──📄Clase4.java
-                    └──📦utils -> Carpeta con las utilidades(enums, validaciones, funciones reutilizables)
-                        ├──📄Enum1.java
-                        ├──📄Enum2.java
-                        ├──📄Validacion1.java
-                        └──📄Validacion2.java
+                    ├──📦utils -> Carpeta con las utilidades(enums, validaciones, funciones reutilizables)
+                    │   ├──📄Enum1.java
+                    │   ├──📄Enum2.java
+                    │   ├──📄Validacion1.java
+                    │   └──📄Validacion2.java
+                    └──📦service -> Carpeta con las interface
+                        ├──📄INombreService1.java
+                        └──📄INombreService2.java
 
 # Estructura basica de una clase
 
@@ -156,7 +159,7 @@ public class Auto {
 
 ```
 
-### Aquí hay un resumen de los principales modificadores de acceso:
+## Resumen de los principales modificadores de acceso:
 1. Public: Una variable declarada con public es accesible desde cualquier parte del código, ya sea dentro de la misma clase, en clases del mismo paquete o en clases de cualquier paquete.
 ```Java
 public class Ejemplo {
@@ -189,6 +192,68 @@ public class Hijo extends Padre {
 }
 
 ```
+# Unidad 2
+
+## Polimorfismo
+- Definimos como clase padre o SuperClase a la clase Figura
+
+> [!IMPORTANT]
+> Esta es un uso de las clases en su forma más básica para explicar el polimorfismo y la herencia.
+> Este es un ejemplo básico de polimorfismo en Java, que permite que un objeto se comporte de diferentes maneras dependiendo de su tipo en tiempo de ejecución.
+
+```Java
+class Figura {
+    void dibujar() {
+        System.out.println("Dibujando una figura.");
+    }
+}
+
+class Circulo extends Figura {
+    @Override //Sobreescritura del metodo dibujar
+    void dibujar() {
+        System.out.println("Dibujando un círculo.");
+    }
+}
+
+class Cuadrado extends Figura {
+    @Override
+    void dibujar() {
+        System.out.println("Dibujando un cuadrado.");
+    }
+}
+
+public class EjemploPolimorfismo {
+
+    public static void main(String[] args) {
+        Figura figura1 = new Circulo();
+        Figura figura2 = new Cuadrado();
+
+        figura1.dibujar(); // Llama al método dibujar() de la clase Circulo
+        figura2.dibujar(); // Llama al método dibujar() de la clase Cuadrado
+    }
+}
+```
+> [!NOTE]
+> En este ejemplo, Figura es la clase padre, Circulo y Cuadrado son clases hijas que sobrescriben el método dibujar().
+> Cuando creamos instancias de Circulo y Cuadrado y las referenciamos como instancias de la clase base Figura, podemos llamar al método dibujar(), y Java decidirá dinámicamente qué implementación ejecutar segun la referencia del objeto donde Figura es la instancia de la clase y new Circulo o new Cuadrado sirven para referenciar de que clase hija es el objeto o si es de la clase padre.
+
+## Clases abstractas
+si una clase es abstracta esta será ideal para ser clase padre o superClase ya que proporcionará la estructura para las clases hijas, pero la diferencia viene cuando nuestra clase es abstracta ya que, solo podremos definir los atributos o métodos pero no la definición del contenido de estos mismos, debido a que si una clase es abstracta no se pueden generar objetos de esta clase.
+
+- Para definir una clase abstracta basta con anteponer la ```abstract``` a la palabra class para posteriormente nombrar a nuestra clase.
+```Java
+public abstract class Animal {
+    abstract void hacerSonido();
+}
+
+public class Perro extends Animal {
+    @Override
+    void hacerSonido() {
+        System.out.println("Guau, guau"); //Aquí si podemos definir el contenido de hacerSonido(); sobreescribiendo el metodo usando @Override.
+    }
+}
+```
+
 
 ## Extras
 - Netbeans tema oscuro:
