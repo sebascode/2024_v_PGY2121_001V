@@ -31,5 +31,8 @@ public class MiServicio {
         
         app.Borrar(1);
         app.ImprimirListado();
+
+        // ejemplo de llamado de constantes declaras en interface
+        int valorIVA = IPersonaService.IVA;
     }
 }
