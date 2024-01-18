@@ -40,4 +40,9 @@ public class PersonaService implements IPersonaService {
         }
         System.out.println("***************");
     }
+
+    // ejemplo de uso de constantes declaradas en interface implementada.
+    public int calcularIva(int valor){
+        return valor * IVA / 100;
+    }
 }
