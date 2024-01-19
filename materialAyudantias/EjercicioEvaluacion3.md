@@ -26,7 +26,8 @@ la aplicación Java.
 
 
 
-> [!IMPORTANT] Restricciones
+> [!IMPORTANT]
+> Restricciones
 > - Los campos no deben quedar vacíos.
 > - El código ingresado debe contener 5 caracteres.
 > - El desarrollo de la interfaz gráfica será diseñado por usted o equipo de trabajo.
