@@ -267,7 +267,7 @@ https://draculatheme.com/netbeans
         - [BettaTech](https://www.youtube.com/@BettaTech)
         - [BraisMoure](https://www.youtube.com/@mouredev)
         - [Guinxu](https://www.youtube.com/@Guinxu)
-        - [S4vitara ciberseguridad](https://www.youtube.com/@s4vitar)
+        - [S4vitar ciberseguridad](https://www.youtube.com/@s4vitar)
 
 
 
