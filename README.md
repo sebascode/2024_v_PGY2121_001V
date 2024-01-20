@@ -255,9 +255,20 @@ public class Perro extends Animal {
 ```
 
 
-## Extras
+## Extra - offtopic Programacion general
 - Netbeans tema oscuro:
 https://draculatheme.com/netbeans
+- Youtubers recomendacion para asignaturas:
+    - Programacion Web:
+        - [MiduDev](https://www.youtube.com/@midudev)
+    - Programacion movil
+        - [Simon Grimm, el padre de ionic](https://www.youtube.com/@galaxies_dev)
+    - Programacion general
+        - [BettaTech](https://www.youtube.com/@BettaTech)
+        - [BraisMoure](https://www.youtube.com/@mouredev)
+        - [Guinxu](https://www.youtube.com/@Guinxu)
+        - [S4vitara ciberseguridad](https://www.youtube.com/@s4vitar)
+
 
 
 ## Readme by [keaguirre](https://github.com/keaguirre)
