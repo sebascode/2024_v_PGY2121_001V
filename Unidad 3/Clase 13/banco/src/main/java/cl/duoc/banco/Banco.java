@@ -4,6 +4,7 @@
  */
 package cl.duoc.banco;
 
+import cl.duoc.banco.gui.vwDepositoCuenta;
 import cl.duoc.banco.gui.vwGiroCuenta;
 import cl.duoc.banco.servicio.BancoService;
 import cl.duoc.banco.servicio.IBancoService;
@@ -65,6 +66,11 @@ public class Banco extends javax.swing.JFrame {
         jMenu3.add(jMenuItem5);
 
         jMenuItem6.setText("Deposito");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem6);
 
         jMenuBar2.add(jMenu3);
@@ -94,6 +100,13 @@ public class Banco extends javax.swing.JFrame {
         escritorio.add(ventana);
         ventana.setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+        vwDepositoCuenta ventana = new vwDepositoCuenta(app);
+        escritorio.add(ventana);
+        ventana.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -4,22 +4,19 @@
  */
 package cl.duoc.banco.gui;
 
-import cl.duoc.banco.exceptions.CuentaBancoException;
 import cl.duoc.banco.servicio.IBancoService;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 /**
  *
  * @author Cetecom
  */
-public class vwGiroCuenta extends javax.swing.JInternalFrame {
+public class vwDepositoCuenta extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form GiroCuenta
      */
     private IBancoService app;
     
-    public vwGiroCuenta(IBancoService app) {
+    public vwDepositoCuenta(IBancoService app) {
         initComponents();
         this.app = app;
     }
@@ -42,7 +39,7 @@ public class vwGiroCuenta extends javax.swing.JInternalFrame {
         btnGuardar = new javax.swing.JButton();
 
         setClosable(true);
-        setTitle("Realizar Giro");
+        setTitle("Realizar Depósito");
 
         jLabel1.setText("Rut");
 
@@ -107,19 +104,19 @@ public class vwGiroCuenta extends javax.swing.JInternalFrame {
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         // TODO add your handling code here:
-        String rut = txtRut.getText();
-        int monto = Integer.parseInt(txtMonto.getText());
-        int tipoCuenta = cboTipoCuenta.getSelectedIndex();
-        
-        System.out.println("giro: "+rut + " $" + monto + " " + tipoCuenta);
-        try {
-            app.realizarGiro(rut, tipoCuenta, monto);
-        } catch (CuentaBancoException ex) {
-            System.out.println(ex);
+        try{
+            String rut = txtRut.getText();
+            int monto = Integer.parseInt(txtMonto.getText());
+            int tipoCuenta = cboTipoCuenta.getSelectedIndex();
+
+            System.out.println("deposito: "+rut + " $" + monto + " " + tipoCuenta);
+            app.realizarDeposito(rut, tipoCuenta, monto);
+
+            System.out.println(app.obtenerCartola(rut, tipoCuenta));
+            System.out.println(app.obtenerSaldoTotal(rut, tipoCuenta));
+        } catch(Exception ex){
+            System.out.println("Mele caí, lorea: "+ex.getMessage());
         }
-        
-        System.out.println(app.obtenerCartola(rut, tipoCuenta));
-        System.out.println(app.obtenerSaldoTotal(rut, tipoCuenta));
     }//GEN-LAST:event_btnGuardarActionPerformed
 
 

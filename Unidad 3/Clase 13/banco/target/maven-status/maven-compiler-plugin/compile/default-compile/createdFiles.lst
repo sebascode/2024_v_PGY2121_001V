@@ -1,2 +1,13 @@
+cl\duoc\banco\gui\vwGiroCuenta$1.class
+cl\duoc\banco\Banco$2.class
+cl\duoc\banco\model\CuentaBancaria.class
+cl\duoc\banco\servicio\IBancoService.class
+cl\duoc\banco\utils\CuentaValidation.class
 cl\duoc\banco\Banco$1.class
 cl\duoc\banco\Banco.class
+cl\duoc\banco\gui\vwGiroCuenta.class
+cl\duoc\banco\gui\vwDepositoCuenta$1.class
+cl\duoc\banco\gui\vwDepositoCuenta.class
+cl\duoc\banco\exceptions\CuentaBancoException.class
+cl\duoc\banco\Banco$3.class
+cl\duoc\banco\servicio\BancoService.class
