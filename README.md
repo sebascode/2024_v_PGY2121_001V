@@ -89,10 +89,13 @@ tipoRetorno nombreDelMetodo(tipoDatoParametro nombreParametro) {
                     │   ├──📄Enum2.java
                     │   ├──📄Validacion1.java
                     │   └──📄Validacion2.java
-                    └──📦service -> Carpeta con las interface
-                        ├──📄INombreService1.java
-                        └──📄INombreService2.java
-
+                    ├──📦service -> Carpeta con las interface
+                    │    ├──📄INombreService1.java
+                    │    └──📄INombreService2.java
+                    └──📦gui -> Carpeta donde principalmente van las clases con las interfaces graficas
+                         ├──📄ClaseGui1.java
+                         ├──📄ClaseGui2.java
+                         └──📄ClaseGui3.java
 # Estructura basica de una clase
 
 ```Java
